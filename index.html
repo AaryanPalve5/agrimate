@@ -76,7 +76,7 @@
             position: fixed;
             bottom: 0;
             font-family: 'Times New Roman', Times, serif;
-            font-size: larger;
+            font-size:medium;
             text-align: center;
             padding: 10px 0;
         }
@@ -176,6 +176,34 @@
             letter-spacing: 3px;
             text-shadow: 0 10 10px grey;
         }
+
+/* Ensure the image container styles are applied */
+/* Ensure the image container styles are applied */
+.image-container { 
+    /* Center images horizontally */
+    text-align: left; /* Ensures images are centered */
+}
+
+/* Adjust the vertical spacing between images */
+.file-img {
+    margin-top: -45%;
+    margin-left: 35%; /* Reduced margin to decrease space above the file image */
+    /* Adjust margin-top as needed */
+}
+
+.chat-img {
+    margin-bottom: 0px; /* Reduced margin to decrease space below the chat image */
+    /* Adjust margin-bottom as needed */
+}
+
+/* Ensure responsiveness of the images */
+.responsive-img {
+    max-width: 60%; /* Adjust this percentage to control the maximum width */
+    max-height: 400px; /* Adjust this value to control the maximum height */
+}
+
+
+
     </style>
 </head>
 <body>
@@ -204,6 +232,14 @@
         <p class="lead">Your A.I. assistant for agriculture</p>
     </div>
 
+
+<a href=" llm ka url idhar dlna ">
+<div class="text-center my-4 image-container">
+    <img src="chat.png" alt="Chat Image" class="responsive-img chat-img">
+    <img src="file.png" alt="Agrimate Image" class="responsive-img file-img">
+</div>
+</a>
+
     <div id="loading-overlay">
         <div class="orbit-spinner">
             <div class="orbit"></div>
@@ -214,7 +250,7 @@
     </div>
 
     <footer class="text-center">
-        <p>Meet the creators: <a href="https://myash21.github.io/portfolio.github.io/">Yash Mhaskar</a> & <a href="https://aaryanpalve5.github.io/PortfolioASP/index.html" target="_blank">Aaryan Palve</a></p>
+        <p>Meet the creators: <a href="https://myash21.github.io/portfolio.github.io/">Yash Mhaskar</a> ,<a href="https://capybara-brain346.github.io/social-goggles/">Piyush Choudhari</a> & <a href="https://aaryanpalve5.github.io/PortfolioASP/index.html" target="_blank">Aaryan Palve</a></p>
     </footer>
 
     <!-- Bootstrap JS and dependencies -->
