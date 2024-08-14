@@ -214,22 +214,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://agrimate-github-io.onrender.com/">Home</a>
+                    <a class="nav-link" href="https://agrimate-github-io.onrender.com/" onclick="showLoading()">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://agrimate-github-io.onrender.com/rain_home">Rainfall Prediction</a>
+                    <a class="nav-link" href="https://agrimate-github-io.onrender.com/rain_home" onclick="showLoading()">Rainfall Prediction</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://agrimate-github-io.onrender.com/crop_home">Crop Recommendation</a>
+                    <a class="nav-link" href="https://agrimate-github-io.onrender.com/crop_home" onclick="showLoading()">Crop Recommendation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://agrimart.onrender.com/">Agri Mart </a>
+                    <a class="nav-link" href="https://agrimart.onrender.com/" onclick="showLoading()">Agri Mart </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://agri-news-gubm.onrender.com/">Agri News </a>
+                    <a class="nav-link" href="https://agri-news-gubm.onrender.com/" onclick="showLoading()">Agri News </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://aaryanpalve5-rice-disease-classification-xx-main-wxuhgb.streamlit.app/">Rice Disease Classification</a>
+                    <a class="nav-link" href="https://aaryanpalve5-rice-disease-classification-xx-main-wxuhgb.streamlit.app/" onclick="showLoading()">Rice Disease Classification</a>
                 </li>
             </ul>
         </div>
@@ -241,7 +241,7 @@
     </div>
 
     <div class="image-container">
-        <a href="https://capybara-brain346.github.io/AgriBot-Demo/">
+        <a href="https://capybara-brain346.github.io/AgriBot-Demo/" onclick="showLoading()">
             <img src="agribot.png" alt="Agrimate Image" class="img-fluid">
         </a>
     </div>
@@ -252,30 +252,26 @@
             <div class="orbit"></div>
             <div class="orbit"></div>
         </div>
-        <div class="loading-text">L o a d i n g...</div>
+        <div class="loading-text">Loading...</div>
     </div>
 
     <footer>
-        <h5>Neural Ninjas</h5>
+        <p>All rights reserved &copy; Aaryan Palve</p>
+        <p>
+            <a href="https://github.com/AaryanPalve5" onclick="showLoading()">GitHub</a> | 
+            <a href="https://www.linkedin.com/in/aaryan-palve-300295260" onclick="showLoading()">LinkedIn</a>
+        </p>
     </footer>
+
+    <script>
+        function showLoading() {
+            document.getElementById("loading-overlay").style.display = "flex";
+        }
+    </script>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-        // Function to show loading screen
-        function showLoading() {
-            document.getElementById('loading-overlay').style.display = 'flex';
-        }
-
-        // Add event listeners to navbar links
-        document.querySelectorAll('.nav-link').forEach(function(link) {
-            link.addEventListener('click', function() {
-                showLoading();
-            });
-        });
-    </script>
 </body>
 </html>
